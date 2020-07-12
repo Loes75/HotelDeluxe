@@ -1,0 +1,84 @@
+//Fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Parisienne&display=swap');
+
+//variables
+@import "_variables.scss";
+
+//Base
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    @media screen and (max-width:400px) {
+        font-size: 13px;       
+    }
+    @media screen and (max-width:200px) {
+        font-size: 10px;       
+    }
+}
+body{
+    background-color: $bgColor;
+    font-family: $font1, sans-serif;
+}
+h1{
+    font-size: 2.4rem;
+
+}
+.container{
+    padding-right: 7% !important;
+    padding-left: 7% !important;
+    @media screen and (max-width:768px) {
+        padding: 0% 3% !important;
+        
+    }
+}
+button:focus {outline:0;}
+.button{
+    text-decoration: none;
+    color: $textColor;
+    display: inline-block;
+    background: $colorO2;
+    padding: 0.4rem 0.9rem;
+    border: 3px solid $colorO2;
+    transition: $mainTransition;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:hover{
+        background-color: $bgLight; 
+        color: $color1;
+    }
+}
+.hide{
+    display: none;
+}
+.title{
+    color: $color2;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    letter-spacing: $mainSpacing;
+    margin-bottom: 50px;
+}
+
+
+//Navbar
+
+@import "_navbar.scss";
+
+//header
+@import "_header.scss";
+
+//Home
+
+@import "_home.scss";
+
+//SingleRoom
+
+@import "_singleRoom.scss";
+
+//Rooms
+@import "_rooms.scss";
+
+//Footer
+@import "_footer.scss";

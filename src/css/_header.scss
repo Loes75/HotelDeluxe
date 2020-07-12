@@ -1,0 +1,40 @@
+@import "_variables.scss";
+
+.header{
+    min-height: 85vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rooms{
+    background-image: url("../images/rooms.jpg") ;
+}
+.home{
+    background-image: url("../images/hotel.jpg") ;
+}
+
+.banner{
+    display: inline-block;
+    color: $color1;
+    padding: 2rem 3rem;
+    background-color: $bgLight;
+    text-align: center;
+    @media screen and (max-width: 400px){
+        padding: 2rem 0rem;
+    }
+    h1, h3 ,span{
+        margin-bottom: 1.5rem;
+        letter-spacing: $mainSpacing;
+        
+    }
+    span{
+        height: 5px;
+        width: 40%;
+        display: inline-block;
+        background-color: $color2;
+    }
+
+}
