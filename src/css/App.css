@@ -283,7 +283,7 @@ button:focus {
 
 @media screen and (max-width: 400px) {
   .roomPreview {
-    padding: 4rem 0.4rem;
+    padding: 4rem 0.8rem;
   }
 }
 
@@ -398,7 +398,7 @@ button:focus {
   .roomImagesContainer .roomImages {
     -ms-grid-columns: (minmax(180px, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    padding: 60px 0px;
+    padding: 60px 10px;
   }
 }
 
@@ -455,14 +455,8 @@ button:focus {
   text-align: center;
 }
 
-@media screen and (max-width: 400px) {
-  .filters {
-    padding: 0px;
-  }
-}
-
 .filterForm {
-  width: 95vw;
+  max-width: 95vw;
   margin: auto;
   display: -ms-grid;
   display: grid;
@@ -508,7 +502,7 @@ button:focus {
   .roomList {
     -ms-grid-columns: (minmax(180px, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    width: 100vw;
+    width: 90vw;
   }
 }
 
