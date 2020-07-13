@@ -15,6 +15,9 @@ export default class RoomInfo extends Component {
         }
     }
     static contextType = RoomContext;
+    componentDidMount () {
+        window.scrollTo(0,0);
+    }
 
     render() {
         const slug = this.state.slug;
@@ -55,9 +58,9 @@ export default class RoomInfo extends Component {
                         <article className="info">
                             <h3>info</h3>
                             <h6>precio : ${price}</h6>
-                            <h6>tamaño : {size}</h6>
+                            <h6>tamaño : {size} m2</h6>
                             <h6>
-                                max capacidad  :
+                                máxima capacidad  :
                 {capacity > 1 ? `${capacity}  personas` : `${capacity}  persona`}
                             </h6>
                             <h6>{drinks ? "bebidas incluidas" : "no incluye bebidas"}</h6>

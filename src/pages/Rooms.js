@@ -1,10 +1,13 @@
-import React , { Fragment }from 'react';
+import React , { Fragment , useEffect}from 'react';
 import Hero from '../components/Hero';
 import Banner from '../components/Banner';
 import { Link } from 'react-router-dom';
 import RoomContainer from '../components/RoomContainer';
 
 export default function Rooms() {
+    useEffect ( ()=>{
+      window.scrollTo(0,0);
+    })
     return (
         <Fragment>
           <Hero bg="rooms">
