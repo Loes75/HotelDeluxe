@@ -28,7 +28,7 @@ You will need node and npm installed globally on your machine.
 
 
 
-##Remember
+## Remember
 
 * You need an account in Contenful
 [Contenful](https://www.contentful.com/)
